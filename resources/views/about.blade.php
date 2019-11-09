@@ -1,13 +1,5 @@
 @extends('layout')
-@section('title', '5A')
 
-
-@section('navbar')
-@parent
+@section('bodya')
+<h3>I am a about</h3>
 @endsection
-
-
-@section('content')
-    <p>.......</p>
-
-@endsection  

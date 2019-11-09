@@ -10,29 +10,19 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('123','Hellocontroller@gettnigvale');
-Route::post('/submit','Hellocontroller@index');
 
-Route::get('/', function () {
-    return view('contacts');
+Route::get('home', function () {
+    return view('home');
 });
-
-Route::get('/welcome', function () {
-    return view('welcome');
+Route::get('contract', function () {
+    return view('contract');
 });
-
-Route::get('/registration', function () {
-    return view('registration');
-});
-Route::get('/about', function () {
+Route::get('about', function () {
     return view('about');
 });
-Route::get('/contacts', function () {
-    return view('contacts');
-});
-Route::get('data/{id}',function($id) {
-   echo 'ID: '.$id;
-});
 
 
-?>
+
+Route::get('/', function () {
+    return view('home');
+});
